@@ -1,0 +1,104 @@
+>>What Is Git?
+
+It is a free, high-quality distributed version control system suitable for tracking modifications in source code in software development. It was originally created as an open-source system for coordinating tasks among programmers, but today it is widely used to track changes in any set of files. 
+
+The key objectives of Git are as follows:
+Speed and efficiency
+Data integrity
+Support for distributed and non-linear workflows
+
+>>What Is GitHub?
+It is a web-based Git repository. This hosting service has cloud-based storage. GitHub offers all distributed version control and source code management functionality of Git while adding its own features. It makes it easier to collaborate using Git. 
+
+Additionally, GitHub repositories are open to the public. Developers worldwide can interact and contribute to one another’s code, modify or improve it, making GitHub a networking site for web professionals. The process of interaction and contribution is also called social coding.
+Getting & Creating Projects
+
+//git init	 Initialize a local Git repository
+
+//git clone   ssh://git@github.com/[username]/[repository-name].git	Create a local copy of a remote repository
+
+>>>>Basic Snapshotting
+Command	Description
+git status	Check status
+git add [file-name.txt]	Add a file to the staging area
+git add -A	Add all new and changed files to the staging area
+git commit -m "[commit message]"	Commit changes
+git rm -r [file-name.txt]	Remove a file (or folder)
+
+>>>Branching & Merging
+git branch	List branches (the asterisk denotes the current branch)
+git branch -a	List all branches (local and remote)
+git branch [branch name]	Create a new branch
+git branch -d [branch name]	Delete a branch
+git push origin --delete [branch name]	Delete a remote branch
+git checkout -b [branch name]	Create a new branch and switch to it
+git checkout -b [branch name] origin/[branch name]	Clone a remote branch and switch to it
+git branch -m [old branch name] [new branch name]	Rename a local branch
+git checkout [branch name]	Switch to a branch
+git checkout -	Switch to the branch last checked out
+git checkout -- [file-name.txt]	Discard changes to a file
+git merge [branch name]	Merge a branch into the active branch
+git merge [source branch] [target branch]	Merge a branch into a target branch
+git stash	Stash changes in a dirty working directory
+git stash clear	Remove all stashed entries
+
+>>Branching & Merging
+Command	Description
+git branch	List branches (the asterisk denotes the current branch)
+git branch -a	List all branches (local and remote)
+git branch [branch name]	Create a new branch
+git branch -d [branch name]	Delete a branch
+git push origin --delete [branch name]	Delete a remote branch
+git checkout -b [branch name]	Create a new branch and switch to it
+git checkout -b [branch name] origin/[branch name]	Clone a remote branch and switch to it
+git branch -m [old branch name] [new branch name]	Rename a local branch
+git checkout [branch name]	Switch to a branch
+git checkout -	Switch to the branch last checked out
+git checkout -- [file-name.txt]	Discard changes to a file
+git merge [branch name]	Merge a branch into the active branch
+git merge [source branch] [target branch]	Merge a branch into a target branch
+git stash	Stash changes in a dirty working directory
+git stash clear	Remove all stashed entries
+
+
+
+1	git init	Initialise a local Git Repository
+2	git add.	Add one or more files to the staging area
+3	git commit -m “Commit Message”	Commit changes to the head but not to the remote repository.
+4	git status	Check the status of your current repository and list the files you have changed.
+5	git log	Provides a list of all commits made on a branch
+6	git diff	View the changes you have made to the file
+7	git push origin <branch name>	Push the branch to the remote repository so that others can use it.
+8	git config --global user.name “Name”	Tell Git who you are by configuring the author name
+9	git config --global user.email user@email.com  	Tell Git who you are by configuring the author email id.
+10	git clone <repository_name>	Creates a Git repository copy from a remote source
+11	git remote add origin <server>	Connect your local repository to the remote server and add the server to be able to push it.
+12	git branch <branch_name>  	Create a new branch
+13	git checkout <branch_name>	Switch from one branch to another
+14	git merge <branch_name>	Merge the branch into the active branch
+15	git rebase	Reapply commits on top of another base tip
+16	git checkout -b <branch_name>	Creates a new branch and switch to it
+17	git stash	Stash changes into a dirty working directory
+18	git pull	Update local repository to the newest commit
+19	git revert <commit_id>	Revert commit changes
+20	git clean -n	Shows which files would be removed from working directory. Use the -f flag in place of the -n flag to execute the clean.
+21	git log --summary	View changes (detailed)
+22	git diff HEAD	Show difference between working directory and last commit.
+23	git log --oneline	View changes (briefly)
+24	git reflog	Show a log of changes to the local repository’s HEAD. Add --relative-date flag to show date info or --all to show all refs.
+25	git rebase -i <base>	Interactively rebase current branch onto <base>. Launches editor to enter commands for how each commit will be transferred to the new base.
+26	git restore --staged <file_name>	Resetting a staged file
+27	git rm -r [File_name]	Remove a file (or folder)
+28	git config --list	List all variables set in config file, along with their values
+29	git branch -d <local_branch>  	Delete local branch in Git
+30	git push -d <remote_name> <branch_name>	Delete remote branch in Git
+31	git stash pop	Unstash the changes
+32	git commit -am	The -am along with the command is to write the commit message on the command line for already staged files.
+33	git commit -ammend	The amend is used to edit the last commit. Incase we need to change the last committed message, this command can be used.
+34	git rm	The git rm command is used to remove or delete files from working tree and index.
+35	git pull --rebase	Git rebase is used to rewrite commits from one branch to another branch.
+36	git merge --squash	The squash along with git merge produces the working tree. It indexes in the same way as that of the real merge, but discards the merge history.
+37	git revert -e <commit_id>	edit the commit mesage before reverting, -e is used for the same.
+38	git bisect	Git bisect goes through all the previous commit and uses binary search to find the bugged commit.
+39	git blame	git blame is used to know who/which commit is responsible for the lastest changes in the repository.
+40	git cherry-pick	Choosing a commit from one branch and applying it to another is known as cherry picking in Git.

@@ -1,0 +1,28 @@
+1.AWS 
+is a cloud computing service offered by Amazon. AWS lets you build, test, deploy and manage applications and services. All this is done via the data-centers and the hardware managed by Amazon. AWS provides you a combination of Infrastructure-as-a-Service (IaaS), Platform-as-a-Service (PaaS), and Software-as-a-Service (SaaS) offerings.
+
+2. What is SnowBall?
+SnowBall is a small application that enables you to transfer terabytes of data inside and outside of the AWS environment.
+
+3.CloudWatch?
+CloudWatch helps you to monitor AWS environments like EC2, RDS Instances, and CPU utilization. It also triggers alarms depending on various metrics.
+
+4.VPC
+ stands for Virtual Private Cloud. It allows you to customize your networking configuration. VPC is a network that is logically isolated from other networks in the cloud. It allows you to have your private IP Address range, internet gateways, subnets, and security groups
+
+5.Key-Pairs 
+are secure login information for your Virtual Machines. To connect to the instances, you can use Key-Pairs which contain a Public Key and a Private Key
+
+6.types of Cloud Services are:
+
+Software as a Service (SaaS)
+Data as a Service (DaaS)
+Platform as a Service (PaaS)
+Infrastructure as a Service (IaaS)
+
+
+7.S3 
+stands for Simple Storage Service. You can use the S3 interface to store and retrieve any amount of data, at any time and from anywhere on the web. For S3, the payment model is “pay as you go”.
+
+8.AWS IAM 
+enables an administrator to provide granular level access to different users and groups

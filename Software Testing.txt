@@ -1,0 +1,131 @@
+//Software Testing
+Software Testing is a method to check whether the actual software product matches expected requirements and to ensure that software product is Defect free.
+
+//Why Software Testing is Important?
+Software Testing is Important because if there are any bugs or errors in the software, it can be identified early and can be solved before delivery of the software product
+
+//Software testing can be divided into two steps: 
+1. Verification: 
+it refers to the set of tasks that ensure that the software correctly implements a specific function. 
+
+2. Validation: 
+it refers to a different set of tasks that ensure that the software that has been built is traceable to customer requirements. 
+
+//Types of Software Testing
+Here are the software testing types:
+
+Functional Testing
+Non-Functional Testing or Performance Testing
+Maintenance (Regression and Maintenance)
+
+//Testing Strategies in Software Engineering
+
+Unit Testing: 
+This software testing basic approach is followed by the programmer to test the unit of the program. It helps developers to know whether the individual unit of the code is working properly or not.
+
+Integration testing: 
+It focuses on the construction and design of the software. You need to see that the integrated units are working without errors or not.
+
+System testing: 
+In this method, your software is compiled as a whole and then tested as a whole. This testing strategy checks the functionality, security, portability, amongst others.
+
+//Program Testing
+Program Testing in software testing is a method of executing an actual software program with the aim of testing program behavior and finding errors. 
+
+//Software Testing can be broadly classified into two types: 
+
+1. Manual Testing: 
+Manual testing includes testing software manually, i.e., without using any automation tool or any script. In this type, the tester takes over the role of an end-user and tests the software to identify any unexpected behavior or bug. There are different stages for manual testing such as unit testing, integration testing, system testing, and user acceptance testing. 
+
+2. Automation Testing: 
+Automation testing, which is also known as Test Automation, is when the tester writes scripts and uses another software to test the product. This process involves the automation of a manual process. Automation Testing is used to re-run the test scenarios quickly and repeatedly, that were performed manually in manual testing.
+
+//What are the different types of Software Testing Techniques ? 
+
+1. Black Box Testing: 
+The technique of testing in which the tester doesn’t have access to the source code of the software and is conducted at the software interface without any concern with the internal logical structure of the software is known as black-box testing. 
+
+2. White-Box Testing: 
+The technique of testing in which the tester is aware of the internal workings of the product, has access to its source code, and is conducted by making sure that all internal operations are performed according to the specifications is known as white box testing. 
+
+//What are different levels of software testing? 
+
+1. Unit Testing:
+ A level of the software testing process where individual units/components of a software/system are tested. The purpose is to validate that each unit of the software performs as designed. 
+
+2. Integration Testing: 
+A level of the software testing process where individual units are combined and tested as a group. The purpose of this level of testing is to expose faults in the interaction between integrated units. 
+
+3. System Testing: 
+A level of the software testing process where a complete, integrated system/software is tested. The purpose of this test is to evaluate the system’s compliance with the specified requirements. 
+
+4. Acceptance Testing: 
+A level of the software testing process where a system is tested for acceptability. The purpose of this test is to evaluate the system’s compliance with the business requirements and assess whether it is acceptable for delivery. 
+
+5.Smoke Testing
+This test is done to make sure that the software under testing is ready or stable for further testing 
+
+6. Alpha Testing
+This is a type of validation testing. It is a type of acceptance testing which is done before the product is released to customers. It is typically done by QA people. 
+
+7.Beta Testing
+The beta test is conducted at one or more customer sites by the end-user of the software. This version is released for a limited number of users for testing in a real-time environment 
+
+8.System Testing
+System Testing is carried out on the whole system in the context of either system requirement specifications or functional requirement specifications or in the context of both. 
+
+//Regression Testing:
+ It ensures that the newly added code is compatible with the existing code. In other words, a new software update has no impact on the functionality of the software.
+
+//Working process of white box testing:
+
+Input: Requirements, Functional specifications, design documents, source code.
+Processing: Performing risk analysis to guide through the entire process.
+Proper test planning: Designing test cases so as to cover the entire code. Execute rinse-repeat until error-free software is reached. Also, the results are communicated.
+Output: Preparing final report of the entire testing process.
+
+//Basis Path Testing: 
+In this technique, control flow graphs are made from code or flowchart and then Cyclomatic complexity is calculated which defines the number of independent paths so that the minimal number of test cases can be designed for each independent path.
+
+//Top-Down Integration Testing – 
+Top-down integration testing technique is used in order to simulate the behaviour of the lower-level modules that are not yet integrated. In this integration testing, testing takes place from top to bottom.
+
+//Mixed Integration Testing –
+ A mixed integration testing is also called sandwiched integration testing. A mixed integration testing follows a combination of top down and bottom-up testing approaches. 
+
+// API?
+API stands for Application Programming Interface. It is a means of communication between two software components. An API abstracts the internal workings and complexity of a software program and allows the user of that API to solely focus on the inputs and outputs required to use it. 
+
+//test coverage techniques are:
+
+Statement/Block Coverage: 
+Measures how many statements in the source code have been successfully executed and tested.
+
+Decision/Branch Coverage: 
+This metric measures how many decision control structures were successfully executed and tested.
+
+Path Coverage: 
+This ensures that the tests are conducted on every possible route through a section of the code.
+
+Function coverage: 
+It measures how many functions in the source code have been executed and tested at least once
+
+
+//A hot deployment is one where the application is deployed while it is still running, and 
+
+//a cold deployment is one where the application is deployed when it is not running.
+
+
+//Blue-green deployments are a way of reducing downtime during deployments by having two identical production environments, one of which is live at any given time
+
+//Red-black deployments are similar, but instead of having two identical environments, the second environment is a copy of the first that is updated with the new code changes.
+
+//A canary is a type of test that is used to help ensure that a new software deployment will not cause any unexpected problems 
+
+//three primary ways to deploy code:
+
+1. Manual deployment – This involves manually transferring files from a development environment to a production environment. This is typically done via FTP or some other file transfer protocol.
+
+2. Automated deployment – This involves using a tool or script to automatically transfer files from a development environment to a production environment. This can be done using a tool like Capistrano, or by writing a custom script.
+
+3. Continuous deployment – This involves automatically deploying code every time it is pushed to a central repository. This can be done using a tool like Jenkins or Travis CI.

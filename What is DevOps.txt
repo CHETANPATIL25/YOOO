@@ -1,0 +1,211 @@
+									DEVOPS
+
+>>What is DevOps?
+DevOps is a combination of software development (dev) and operations (ops). It is defined as a software engineering methodology that aims to integrate the work of development and operations teams by facilitating a culture of collaboration and shared responsibility.
+
+>>DevOps tools, concepts and fundamentals
+DevOps covers a wide range of practices across the application lifecycle. Teams often start with one or more of these practices in their journey to DevOps success.
+
+Version control	
+The fundamental practice of tracking and managing every change made to source code and other files. Version control is closely related to source code management.
+
+Agile development 
+means taking iterative, incremental, and lean approaches to streamline and accelerate the delivery of projects.
+
+Continuous Integration (CI)	
+The practice of regularly integrating all code changes into the main branch, automatically testing each change, and automatically kick off a build.
+
+Continuous Delivery (CD)	
+Continuous delivery works in conjunction with continuous integration to automate the infrastructure provisioning and application release process. They are commonly referred to together as [CI/CD](/topics/ci-cd/).
+
+Shift left	
+A term for shifting security and testing much earlier in development. Doing this can help speed up development while simultaneously improving code quality.
+
+>>How are DevOps and CI/CD related?
+CI/CD — the combination of continuous integration and continuous delivery — is an essential part of DevOps and any modern software development practice. A purpose-built CI/CD platform can maximize development time by improving an organization’s productivity, increasing efficiency, and streamlining workflows through built-in automation, continuous testing, and collaboration.
+
+>>Microservices
+The microservices architecture is a design approach to build a single application as a set of small services. Each service runs in its own process and communicates with other services through a well-defined interface using a lightweight mechanism, typically an HTTP-based application programming interface (API). 
+
+>>Infrastructure as Code
+Infrastructure as code is a practice in which infrastructure is provisioned and managed using code and software development techniques, such as version control and continuous integration. 
+
+>>Policy as Code
+With infrastructure and its configuration codified with the cloud, organizations can monitor and enforce compliance dynamically and at scale. Infrastructure that is described by code can thus be tracked, validated, and reconfigured in an automated way. 
+
+
+
+
+
+									GIT
+
+
+
+>>What Is Git?
+It is a free, high-quality distributed version control system suitable for tracking modifications in source code in software development. It was originally created as an open-source system for coordinating tasks among programmers, but today it is widely used to track changes in any set of files. 
+
+The key objectives of Git are as follows:
+Speed and efficiency
+Data integrity
+Support for distributed and non-linear workflows
+
+>>What Is GitHub?
+It is a web-based Git repository. This hosting service has cloud-based storage. GitHub offers all distributed version control and source code management functionality of Git while adding its own features. It makes it easier to collaborate using Git. 
+
+Additionally, GitHub repositories are open to the public. Developers worldwide can interact and contribute to one another’s code, modify or improve it, making GitHub a networking site for web professionals. The process of interaction and contribution is also called social coding.
+
+						DOCKER
+
+>>Docker 
+It is a software platform that allows you to build, test, and deploy applications quickly. Docker packages software into standardized units called containers that have everything the software needs to run including libraries, system tools, code, and runtime.
+
+>>docker namespace
+A namespace is basically a Linux feature that ensures OS resources partition in a mutually exclusive manner. This forms the core concept behind containerization as namespaces introduce a layer of isolation amongst the containers.
+
+>>Docker Hub?
+It is a public cloud-based registry provided by Docker for storing public images of the containers along with the provision of finding and sharing them
+
+>>How Docker is used in DevOps?
+The DevOps pillar defines the build–Continuous Integration (CI) pipelines using the Dockerfile provided in the code repository. The CI system pulls the base container images from the selected Docker registry and builds the custom Docker images for the application
+
+>> A container 
+it is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another. 
+
+>> A Docker container image 
+is a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries and settings. Container images become containers at runtime and in the case of Docker containers – images become containers when they run on Docker Engine.
+
+>>hypervisor
+A hypervisor is software that makes virtualization happen because of which is sometimes referred to as the Virtual Machine Monitor. This divides the resources of the host system and allocates them to each guest environment installed.
+
+>>Kubernetes clusters 
+are comprised of one master node and a number of worker nodes. These nodes can either be physical computers or virtual machines, depending on the cluster. The master node controls the state of the cluster; for example, which applications are running and their corresponding container images.
+
+
+
+								KUBERNETES
+	
+	
+
+>>What is Kubernetes?
+Kubernetes, also referred to as K8s, is an open-source platform used to manage Linux Containers across private, public and hybrid cloud environments. Businesses also can use Kubernetes to manage microservice architectures. Containers and Kubernetes are deployable on most cloud providers.
+
+>>kubectl
+The Kubernetes command-line tool, kubectl, allows you to run commands against Kubernetes clusters. You can use kubectl to deploy applications, inspect and manage cluster resources, and view logs
+
+>>Pods
+are comprised of one or multiple containers located on a host machine, and the containers can share resources. Kubernetes finds a machine that has enough free computing capacity for a given pod and launches the associated containers. To avoid conflicts, each pod is assigned a unique IP address, which enables applications to use ports.
+
+>> A node agent called a kubelet, 
+manages the pods, their containers and their images. Kubelets also automatically restart a container if it fails. Alternatively, Kubernetes APIs can be used to manually manage pods.
+
+>> What is a Kubernetes cluster?
+ A Kubernetes cluster is a set of nodes that run containerized applications. Containerizing applications packages an app with its dependences and some necessary services. They are more lightweight and flexible than virtual machines. 
+
+>>What is Kubernetes used for?
+Enterprises primarily use Kubernetes to manage and federate containers , as well as to manage passwords, tokens, SSH keys and other sensitive information.
+
+>>Benefits of Kubernetes
+Kubernetes enables users to schedule, run and monitor containers, typically in clustered configurations, and automate related operational tasks. These include:
+
+Deployment. 
+Set and modify preferred states for container deployment. Users can create new container instances, migrate existing ones to them and remove the old ones.
+
+Monitoring. 
+Continuously check container health, restart failed containers and remove unresponsive ones
+
+Load balancing. 
+Perform load balancing to distribute traffic across multiple container instances.
+
+Storage. 
+Handle varied storage types for container data, from local storage to cloud resources.
+
+Optimization. 
+Add a level of intelligence to container deployments, such as resource optimization -- identify which nodes are available and which resources are required for containers, and automatically fit containers onto those nodes.
+
+Security. 
+Manage passwords, tokens, SSH keys and other sensitive information.
+
+>>Challenges of using Kubernetes
+
+Kubernetes often requires role and responsibility changes within an existing IT department as organizations decide which storage model to deploy: whether to use a public cloud or on-premises servers. Larger organizations experience different challenges than smaller ones, and these vary depending on the number of employees, scalability and infrastructure.
+
+Difficult DIY. 
+Some enterprises desire the flexibility to run open-source Kubernetes themselves if they have the skilled staff and resources to support it. Many others will choose a package of services from the broader Kubernetes ecosystem to help simplify its deployment and management for IT teams.
+
+Load scaling. 
+Pieces of an application in containers may scale differently (or not at all) under load -- this is a function of the application, not the method of container deployment. Organizations must factor in how to balance pods and nodes.
+
+Distributed complexity. 
+Distributing application components in containers enables flexibility to scale features up and down -- but too many distributed app components increase complexity, and can impact network latency and reduce availability.
+
+Monitoring and observability. 
+As organizations expand container deployment and orchestration for more workloads in production, it becomes harder to know what's going on behind the scenes. This creates a heightened need to better monitor various layers of the Kubernetes stack, and the entire platform, for performance and security.
+
+>>Load Balance in Kubernetes?
+Load balancing is a way to distribute the incoming traffic into multiple backend servers, which is useful to ensure the application available to the users.
+
+>>YAML
+YAML file consists of the language YAML (YAML Ain't Markup Language) which is a Unicode-based data-serialization language; used for configuration files, internet messaging, object persistence, etc. YAML uses the. yaml extension for its files. Its syntax is independent of a specific programming language.
+
+>> Datree
+Datree is an (open-source) scanner that inspects Kubernetes configuration for misconfigurations.
+
+Datree prevents misconfigurations by blocking resources that do not meet your policy. Datree comes with a built-in rules, so you don’t have to worry about codifying your policies by yourself. Dozens of rules are ready in various areas: Container, Workload, CronJob, Network, Security, Deprecation, Argo, NSA-hardening-guidelines, and more.
+
+Datree is used on the command line, admission webhook, or even as a kubectl plugin to run policies against Kubernetes objects.
+
+>>Helm 
+is a tool that automates the creation, packaging, configuration, and deployment of Kubernetes applications by combining your configuration files into a single reusable package.
+
+Helm provides one of the most accessible solutions to this problem, making deployments more consistent, repeatable, and reliable. In this article, you’ll learn about Helm and its use cases, as well as how to decide if you should adopt it for your Kubernetes projects.
+
+>> Helm charts
+A Helm chart is a package that contains all the necessary resources to deploy an application to a Kubernetes cluster. This includes YAML configuration files for deployments, services, secrets, and config maps that define the desired state of your application.
+ 
+>>How Helm works
+The Helm application library uses charts to define, create, install, and upgrade Kubernetes applications. Helm charts allow you to manage Kubernetes manifests without using the Kubernetes command-line interface (CLI) or remembering complicated Kubernetes commands to control the cluster.
+
+>> Kubescape
+An open-source Kubernetes security platform for your IDE, CI/CD pipelines, and clusters
+
+Kubescape is an open-source Kubernetes security platform. It includes risk analysis, security compliance, and misconfiguration scanning. Targeted at the DevSecOps practitioner or platform engineer, it offers an easy-to-use CLI interface, flexible output formats, and automated scanning capabilities. It saves Kubernetes users and admins precious time, effort, and resources.
+
+>>Minikube is a lightweight Kubernetes implementation that creates a VM on your local machine and deploys a simple cluster containing only one node. Minikube is available for Linux, macOS, and Windows systems
+
+
+
+								DEPLOYMENT		
+
+
+
+>>What is Deployment?
+A deployment is an object in Kubernetes that helps you to manage a group of identical pods.Without a deployment, you’d got to produce, update, and delete a bunch of pods manually.
+With a deployment, we tend to declare one object in a very YAML file.
+
+>>Top Kubernetes Deployment Strategies
+
+1. Recreate Deployment
+A recreate deployment strategy is an all-or-nothing process that lets you update an application immediately, with some downtime. 
+
+2. Rolling Deployment
+Rolling deployment is a deployment strategy that updates a running instance of an application to a new version. 
+
+3. Blue/Green Deployment (Red/Black Deployment)
+A blue/green (or red/black) deployment strategy enables you to deploy a new version while avoiding downtime. Blue represents the current version of the application, while green represents the new version. 
+
+4. Canary Deployment
+A canary deployment strategy enables you to test a new application version on a real user base without committing to a full rollout. 
+
+5. A/B Testing
+In the context of Kubernetes, A/B testing refers to canary deployments that distribute traffic to different versions of an application based on certain parameters. A typical canary deployment routes users based on traffic weights, whereas A/B testing can target specific users based on cookies, user agents, or other parameters.
+
+6. Shadow Deployment
+Shadow deployments are another type of canary deployments where you test a new release on production workloads. A shadow deployment splits traffic between a current and a new version, without end users noticing the difference. When the stability and performance of the new version meets predefined requirements, operators trigger a full rollout.
+
+
+
+>>Jenkins 
+is an open source continuous integration/continuous delivery and deployment (CI/CD) automation software DevOps tool written in the Java programming language. It is used to implement CI/CD workflows, called pipelines
+
+>>Version Control?
+Version control involves the use of a central repository where teammates can commit changes to files and sets of files. The purpose of version control is to track every line of code, and to share, review, and synchronize changes between team members. The following are some of the most popular version control tools:
